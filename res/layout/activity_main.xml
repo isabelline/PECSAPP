@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_landscape"
+    tools:context=".MainActivity" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/main_layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="4dp" >
+
+        <ImageView
+            android:id="@+id/main_browse_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/main_browse" />
+
+        <ImageView
+            android:id="@+id/main_play_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/main_browse_img"
+            android:background="@drawable/main_play" />
+
+        <ImageView
+            android:id="@+id/main_help_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignTop="@+id/main_browse_img"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/main_play_img"
+            android:background="@drawable/main_help" />
+
+        <ImageView
+            android:id="@+id/main_trash_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/main_trash" />
+    </RelativeLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_above="@id/main_layout_buttons">
+		<ImageView 
+		    android:id="@+id/main_img_01"
+		    android:layout_weight="1"
+		    android:layout_height="fill_parent"
+		    android:layout_width="fill_parent"
+		    android:layout_marginTop="120dp"
+		    android:layout_marginBottom="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:src="@android:color/transparent"/>
+		<ImageView 
+		    android:id="@+id/main_img_02"
+		    android:layout_weight="1"
+		    android:layout_height="fill_parent"
+		    android:layout_width="fill_parent"
+		    android:layout_marginTop="120dp"
+		    android:layout_marginBottom="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:src="@android:color/transparent"/>
+		<ImageView 
+		    android:id="@+id/main_img_03"
+		    android:layout_weight="1"
+		    android:layout_height="fill_parent"
+		    android:layout_width="fill_parent"
+		    android:layout_marginTop="120dp"
+		    android:layout_marginBottom="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:src="@android:color/transparent"/>
+		<ImageView 
+		    android:id="@+id/main_img_04"
+		    android:layout_weight="1"
+		    android:layout_height="fill_parent"
+		    android:layout_width="fill_parent"
+		    android:layout_marginTop="120dp"
+		    android:layout_marginBottom="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:src="@android:color/transparent"/>
+		
+    </LinearLayout>
+</RelativeLayout>
